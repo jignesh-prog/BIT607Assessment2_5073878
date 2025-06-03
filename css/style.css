@@ -55,7 +55,7 @@ header:hover {
     color: grey;
 }
 
-button {
+.button {
     width: 100%;
     padding: 12px;
     background-color: black;
@@ -68,7 +68,7 @@ button {
     z-index: 999;
 }
 
-button:hover {
+.button:hover {
     box-shadow: 1px 1px 5px black;
 }
 
