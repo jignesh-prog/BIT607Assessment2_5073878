@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snazzy Paws Grooming - Gallery">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Snazzy Paws Grooming - Gallery</title>
-    <link rel="stylesheet" href="../css/minify_style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/index.js"></script>
 </head>
 
@@ -19,7 +23,7 @@
                 <li class="items"><a href="faqs.html">FAQs</a></li>
                 <li class="items"><a href="gallery.html">Gallery</a></li>
                 <li class="items"><a href="contact.html">Contact Us</a></li>
-                <li><a href="booking.html" class="button">Book Now</a></li>
+                <li><a href="booking.html" class="btn-primary button">Book Now</a></li>
                 <li onclick="showSidebar()"><a href="#"><ion-icon name="menu-outline"></ion-icon></a></li>
             </ul>
             <ul class="sidebar">
@@ -35,7 +39,7 @@
     <section class="banner">
         <img src="../images/banner5.jpg" alt="Dog gromming banner" />
     </section>
-    <main>
+    <main class="container container-fluid">
         <div>
             <h1>
                 Snazzy Paws Grooming
@@ -45,64 +49,67 @@
                 scelerisque justo, non fermentum massa.
             </p>
         </div>
-        <div id="grid" class="grid-container">
-
-            <div id="image1" class="griditem">
+        <div id="grid" class="row">
+            <div id="image1" class="col-xs-3">
                 <img src="../images/image1.jpg" alt="Gallery image one" />
             </div>
-
-            <div id="image2" class="griditem">
+            <div id="image2" class="col-xs-3">
                 <img src="../images/image2.jpg" alt="Gallery image one" />
             </div>
-            <div id="image3" class="griditem">
+            <div id="image3" class="col-xs-3">
                 <img src="../images/image3.jpeg" alt="Gallery image one" />
 
             </div>
-            <div id="image4" class="griditem">
+            <div id="image4" class="col-xs-3">
                 <img src="../images/image4.jpg" alt="Gallery image one" />
             </div>
-            <div id="image5" class="griditem">
+        </div>
+        <div id="grid" class="row">
+            <div id="image5" class="col-xs-3">
                 <img src="../images/image5.jpg" alt="Gallery image one" />
             </div>
-            <div id="image6" class="griditem">
+            <div id="image6" class="col-xs-3">
                 <img src="../images/image6.jpg" alt="Gallery image one" />
             </div>
-            <div id="image7" class="griditem">
+            <div id="image7" class="col-xs-3">
                 <img src="../images/image1.jpg" alt="Gallery image one" />
             </div>
-            <div id="image8" class="griditem">
+            <div id="image8" class="col-xs-3">
                 <img src="../images/image2.jpg" alt="Gallery image one" />
             </div>
-            <div id="image9" class="griditem">
+        </div>
+        <div id="grid" class="row">
+            <div id="image9" class="col-xs-3">
                 <img src="../images/image3.jpeg" alt="Gallery image one" />
             </div>
-            <div id="image10" class="griditem">
+            <div id="image10" class="col-xs-3">
                 <img src="../images/image4.jpg" alt="Gallery image one" />
             </div>
-            <div id="image11" class="griditem">
+            <div id="image11" class="col-xs-3">
                 <img src="../images/image5.jpg" alt="Gallery image one" />
             </div>
-            <div id="image12" class="griditem">
+            <div id="image12" class="col-xs-3">
                 <img src="../images/image6.jpg" alt="Gallery image one" />
             </div>
-            <div id="image13" class="griditem">
+        </div>
+        <div id="grid" class="row">
+            <div id="image13" class="col-xs-3">
                 <img src="../images/image1.jpg" alt="Gallery image one" />
             </div>
-            <div id="image14" class="griditem">
+            <div id="image14" class="col-xs-3">
                 <img src="../images/image2.jpg" alt="Gallery image one" />
             </div>
-            <div id="image15" class="griditem">
+            <div id="image15" class="col-xs-3">
                 <img src="../images/image3.jpeg" alt="Gallery image one" />
             </div>
-            <div id="image16" class="griditem">
+            <div id="image16" class="col-xs-3">
                 <img src="../images/image4.jpg" alt="Gallery image one" />
             </div>
-
         </div>
     </main>
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-content-column">
+        <div class=" container container-fluid">
+            <div class="col-xs-3">
                 <div class="footer-logo">
                     <a class="footer-logo-link" href="iundex.html">
                         <span class="hidden-link-text">Snazzy Paws Grooming</span>
@@ -121,13 +128,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-content-column">
+            <div class="col-xs-3">
                 <div class="footer-menu">
                     <h2 class="footer-menu-name"> Legal</h2>
                     <ul id="menu-legal" class="footer-menu-list">
                         <li
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                            <a href="#">Privacy Notice</a>
+                            <a href="privacy-policy.html">Privacy Policy</a>
                         </li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
                             <a href="#">Terms of Use</a>
@@ -135,7 +142,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-content-column">
+            <div class="col-xs-3">
                 <div class="footer-menu">
                     <h2 class="footer-menu-name"> Quick Links</h2>
                     <ul id="menu-quick-links" class="footer-menu-list">
@@ -154,7 +161,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-content-column">
+            <div class="col-xs-3">
                 <div class="footer-call-to-action">
                     <h2 class="footer-call-to-action-title"> Let's Chat</h2>
                     <p class="footer-call-to-action-description"> Have a support question?</p>

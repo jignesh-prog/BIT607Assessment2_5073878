@@ -16,22 +16,5 @@ function closeSidebar() {
         sidebar.style.display = 'none';
     }, 300);
 }
-function toggleFaqs() {
-    const disclosures = document.querySelectorAll(".disclosure");
-    disclosures.forEach((disclosure) => {
-        const question = disclosure.querySelector(".disclosure-question");
-        const answer = disclosure.querySelector(".disclosure-answer");
-      
-        question.addEventListener("click", () => {
-          answer.classList.toggle("active");
-      
-          const icon = question.querySelector(".chevron-icon");
-          if (answer.classList.contains("active")) {
-            icon.style.transform = "rotate(180deg)";
-          } else {
-            icon.style.transform = "rotate(0deg)";
-          }
-        });
-      });
-}
+
 

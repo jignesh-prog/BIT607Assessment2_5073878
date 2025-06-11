@@ -6,10 +6,6 @@
     margin: 0;
 }
 
-body {
-    background-color: white;
-}
-
 .logo {
     position: absolute;
     left: 20px;
@@ -56,7 +52,6 @@ header:hover {
 }
 
 .button {
-    width: 100%;
     padding: 12px;
     background-color: black;
     color: white;
@@ -129,8 +124,6 @@ nav ion-icon {
 
 /* main */
 main {
-    max-width: 1024px;
-    margin: auto;
     padding: 30px 15px;
 }
 
@@ -143,45 +136,12 @@ p {
 }
 
 /* Services */
-table {
-    border: 1px solid #004658;
+table tr th {
     text-align: center;
 }
 
-table th {
-    border-bottom: 1px solid #004658;
-    border-right: 1px solid #004658;
-    padding: 30px 0;
-    background-color: #027b9a;
-    margin: 0;
-}
-
-table th:last-child {
-    border-right: 0px;
-}
-
-table td {
-    text-transform: capitalize;
-    margin: 0;
-    padding: 15px 0;
-    border-bottom: 1px solid #004658;
-    border-right: 1px solid #004658;
-}
-
-table td:last-child {
-    border-right: 0px;
-}
-
-table tr:last-child td {
-    border-bottom: 0px;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
 /* FAQs */
-.container {
+.container-faq {
     margin: 30px 0;
     border: 1px solid #d1d5db;
     border-radius: 0.375rem;
@@ -206,8 +166,6 @@ tr:nth-child(even) {
 }
 
 .question-text {
-    font-size: 1rem;
-    line-height: 1.75rem;
     font-weight: 600;
 }
 
@@ -224,29 +182,27 @@ tr:nth-child(even) {
 
 .disclosure-answer.active {
     display: block;
-    padding: 0.2rem 0.75rem 0.75rem;
     height: auto;
 }
 
 .answer-text {
-    font-size: 1rem;
-    line-height: 1.75rem;
     color: #718096;
+    padding: 15px;
 }
 
 /* Gallery */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 100%;
-    grid-gap: 15px;
+#grid {
+    height: 250px;
+    padding: 15px 0;
 }
 
-.griditem img {
+#grid .col-sm-3{
+    height: 100%;
+}
+
+#grid img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 100%;
 }
 
@@ -298,28 +254,6 @@ input[type=submit]:hover {
     text-decoration: none;
 }
 
-.footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1230px;
-    padding: 40px 15px 300px;
-    position: relative;
-}
-
-.footer-content-column {
-    box-sizing: border-box;
-    float: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-    color: #fff;
-}
-
-.footer-content-column ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .footer-logo-link {
     display: inline-block;
 }
@@ -361,26 +295,8 @@ input[type=submit]:hover {
     color: #00bef0;
 }
 
-.button:last-of-type {
-    margin-right: 0;
-}
-
 .footer-call-to-action-button {
     background-color: #027b9a;
-    border-radius: 21px;
-    color: #fffff2;
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: .1em;
-    line-height: 18px;
-    padding: 12px 30px;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: background-color .2s;
-    cursor: pointer;
-    position: relative;
 }
 
 .footer-call-to-action {
@@ -515,53 +431,8 @@ input[type=submit]:hover {
     text-decoration: none;
 }
 
-/* Media Query For different screens */
-@media (min-width:320px) and (max-width:479px) {
-
-    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-    .footer-content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1230px;
-        padding: 40px 15px 1050px;
-        position: relative;
-    }
-}
-
-@media (min-width:480px) and (max-width:599px) {
-
-    /* smartphones, Android phones, landscape iPhone */
-    .footer-content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1230px;
-        padding: 40px 15px 1050px;
-        position: relative;
-    }
-}
-
-@media (min-width:600px) and (max-width: 800px) {
-
-    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-    .footer-content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1230px;
-        padding: 40px 15px 1050px;
-        position: relative;
-    }
-}
-
-@media (min-width: 760px) {
-    .footer-content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1230px;
-        padding: 40px 15px 300px;
-        position: relative;
-    }
-
-    .footer-content-column {
-        width: 24.99%;
+@media (max-width: 500px) {
+    #grid {
+        height: 100px;
     }
 }
